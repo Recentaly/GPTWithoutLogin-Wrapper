@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 from flask_cloudflared import run_with_cloudflared
-import waitress
+
 import logging
 
 from res.src.Api import API
