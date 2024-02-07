@@ -3,3 +3,4 @@ flask_cors
 flask_cloudflared
 fake_useragent
 requests
+brotli
