@@ -51,4 +51,11 @@ class API(object):
             for chunk in response.iter_lines():
                 yield chunk
 
-        else:   yield response.json()
+        else:   
+            
+            try:
+                
+                yield response.json()
+            
+            except Exception as e:
+                yield response.content.decode("utf-8")
