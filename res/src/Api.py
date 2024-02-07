@@ -3,6 +3,8 @@ from typing import Dict, List, Any
 from fake_useragent import UserAgent
 from secrets import randbelow
 
+import brotli
+
 class API(object):
 
     def __init__(self):
@@ -58,4 +60,4 @@ class API(object):
                 yield response.json()
             
             except Exception as e:
-                yield response.content.decode("utf-8")
+                yield brotli.decompress(chunk).decode("utf-8")
