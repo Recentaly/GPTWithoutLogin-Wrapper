@@ -46,8 +46,11 @@ def models():
     return jsonify(
         {"data": [
             {"id": "gpt-3.5-turbo"},
-            {"id": "gpt-3.5-turbo-0125"},
+            {"id": "gpt-3.5-turbo-0613"},
             {"id": "gpt-3.5-turbo-16k"},
+            {"id": "gpt-3.5-turbo-16k-0613"},
+            {"id": "gpt-3.5-turbo-1106"},
+            {"id": "gpt-3.5-turbo-0125"},
             ]
         }
     ), 200
